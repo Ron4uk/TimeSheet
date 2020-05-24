@@ -1,0 +1,4 @@
+url=jdbc:mysql://localhost:3306/bd_time_tracking?useUnicode=true&serverTimezone=UTC
+username = root
+password = slimshady666
+driver=com.mysql.cj.jdbc.Driver

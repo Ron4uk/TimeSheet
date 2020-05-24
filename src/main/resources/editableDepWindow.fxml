@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="200.0" minWidth="400.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EditableDepController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="177.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="604.0" prefWidth="164.0">
+               <children>
+                  <VBox fx:id="vboxDepartments" layoutX="14.0" layoutY="39.0" prefHeight="604.0" prefWidth="162.0" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <HBox layoutX="177.0" layoutY="393.0" prefHeight="30.0" prefWidth="422.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="edit" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="Редактировать">
+               <opaqueInsets>
+                  <Insets right="10.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="15.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="add" layoutX="10.0" layoutY="10.0" minWidth="90.0" mnemonicParsing="false" prefWidth="90.0" text="Добавить">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></Button>
+            <Button fx:id="delete" layoutX="160.0" layoutY="10.0" minWidth="90.0" mnemonicParsing="false" prefWidth="90.0" text="Удалить">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></Button>
+            <Button fx:id="logOut" layoutX="295.0" layoutY="10.0" minWidth="90.0" mnemonicParsing="false" prefWidth="90.0" text="Выход">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <VBox layoutX="177.0" prefHeight="325.0" prefWidth="422.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="labelDep" alignment="CENTER" disable="true" maxWidth="1.7976931348623157E308" text="Изменить название департамента.">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="labelDepCur" alignment="CENTER" disable="true" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="editTextField" editable="false" maxWidth="1.7976931348623157E308">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="writeEditDep" alignment="BOTTOM_RIGHT" mnemonicParsing="false" text="Записать в БД">
+               <VBox.margin>
+                  <Insets left="320.0" top="10.0" />
+               </VBox.margin></Button>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Добавить новый департамент">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="addTextField1" layoutX="15.0" layoutY="57.0" maxWidth="1.7976931348623157E308" promptText="Введите название департамента" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" opacity="0.59" text="NOTE: для удаления или редактирования выберите необходимый департамент" wrapText="true">
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultLabel" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="403.0" maxWidth="1.7976931348623157E308" opacity="0.59" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

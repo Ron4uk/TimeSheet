@@ -1,0 +1,20 @@
+.holidayStyle{
+    -fx-background-color: #ffa799;
+}
+.oddStyle{
+    -fx-background-color: #a0e8a0;
+}
+.evenStyle{
+    -fx-background-color: #c9f5c9;
+}
+
+.oddStyleNoDate{
+    -fx-background-color: #b3b3b3;
+}
+.evenStyleNoDate{
+    -fx-background-color: #cccccc;
+}
+
+.titleStyle{
+-fx-background-color: #999999;
+}

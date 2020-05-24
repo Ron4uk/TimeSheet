@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="200.0" minWidth="400.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BaseController">
+
+    <children>
+        <SplitPane fx:id="asssda" dividerPositions="0.20340681362725452" prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane maxWidth="200.0" minHeight="400.0" minWidth="200.0" prefWidth="200.0" SplitPane.resizableWithParent="false">
+                    <children>
+                        <VBox fx:id="departments" layoutX="33.0" layoutY="84.0" prefHeight="498.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children></AnchorPane>
+                <StackPane alignment="TOP_LEFT" minWidth="100.0" prefHeight="598.0" prefWidth="636.0">
+                    <children>
+                        <AnchorPane prefHeight="598.0" prefWidth="739.0">
+                            <children>
+                                <TabPane fx:id="tabepane" layoutX="52.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab fx:id="1" onSelectionChanged="#printOnClick" text="Январь">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="2" onSelectionChanged="#printOnClick" text="Февраль">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="3" onSelectionChanged="#printOnClick" text="Март">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="4" onSelectionChanged="#printOnClick" text="Апрель">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="5" onSelectionChanged="#printOnClick" text="Май">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="6" onSelectionChanged="#printOnClick" text="Июнь">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="7" onSelectionChanged="#printOnClick" text="Июль">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="8" onSelectionChanged="#printOnClick" text="Август">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="9" onSelectionChanged="#printOnClick" text="Сентябрь">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="10" onSelectionChanged="#printOnClick" text="Октябрь">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="11" onSelectionChanged="#printOnClick" text="Ноябрь">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="12" onSelectionChanged="#printOnClick" text="Декабрь">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                                <ScrollPane fx:id="generalView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </StackPane>
+            </items>
+        </SplitPane>
+        <ScrollPane fx:id="legendScroll" fitToHeight="true" fitToWidth="true" layoutY="500.0" prefHeight="101.0" prefWidth="404.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+
+        </ScrollPane>
+        <VBox fx:id="noteBox" layoutX="403.0" layoutY="412.0" prefHeight="101.0" prefWidth="597.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="403.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Button fx:id="logOut" layoutX="10.0" layoutY="85.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Выход" />
+            </children>
+        </VBox>
+
+    </children>
+</AnchorPane>
